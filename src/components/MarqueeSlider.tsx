@@ -4,11 +4,12 @@ import { cn } from "@/lib/utils";
 
 // Achievement images
 const achievementImages = [
-  "/lovable-uploads/3c08aa64-bae9-406d-a9f7-8fa00fb9aedc.png",
-  "/lovable-uploads/9f81e61a-3daf-4b21-8fc3-ac7f3eec8055.png",
-  "/lovable-uploads/e5fb25ae-c7d7-479c-bf72-3c25ae2add97.png",
-  "/lovable-uploads/48c77b23-a4a3-40e8-8c97-c2a0f022c877.png",
-  "/lovable-uploads/3bac5a40-36ad-47ae-81f3-21e2d8dc9ea5.png"
+  "/lovable-uploads/220dae60-383f-4167-b352-62c80e398b6e.png",
+  "/lovable-uploads/1cd2dea5-bee8-4f6c-8b93-1b696082e01e.png",
+  "/lovable-uploads/156e7396-f6a8-4599-9308-c26111ad9bcb.png",
+  "/lovable-uploads/c7550178-b9c0-47ff-a738-c89f2bdca8e8.png",
+  "/lovable-uploads/2be012ed-9b11-46de-81e8-adc1477b8873.png",
+  "/lovable-uploads/ece37dc1-41ac-4c16-96fd-2ce53d01e8a0.png"
 ];
 
 interface MarqueeSliderProps {
@@ -53,7 +54,7 @@ const MarqueeSlider: React.FC<MarqueeSliderProps> = ({ className }) => {
           {achievementImages.map((image, index) => (
             <div 
               key={index} 
-              className="w-64 h-60 md:w-96 md:h-72 flex-shrink-0 rounded-2xl overflow-hidden shadow-lg"
+              className="w-64 h-60 md:w-72 md:h-64 flex-shrink-0 rounded-2xl overflow-hidden shadow-lg"
             >
               <img
                 src={image}
@@ -67,7 +68,7 @@ const MarqueeSlider: React.FC<MarqueeSliderProps> = ({ className }) => {
           {achievementImages.map((image, index) => (
             <div 
               key={`duplicate-${index}`} 
-              className="w-64 h-60 md:w-96 md:h-72 flex-shrink-0 rounded-2xl overflow-hidden shadow-lg"
+              className="w-64 h-60 md:w-72 md:h-64 flex-shrink-0 rounded-2xl overflow-hidden shadow-lg"
             >
               <img
                 src={image}

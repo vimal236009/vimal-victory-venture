@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
     <footer className="py-12 px-6 md:px-12 lg:px-24 border-t border-border">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-12">
-          <div className="md:col-span-5">
+          <div className="md:col-span-4">
             <h3 className="font-display text-xl font-bold mb-4">VIMAL BACHANI</h3>
             <p className="text-foreground/70 mb-4 max-w-xs">
               Performance Marketing Specialist helping brands scale with data-driven marketing strategies.
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
           
-          <div className="md:col-span-4">
+          <div className="md:col-span-3">
             <h3 className="font-medium text-lg mb-4">Contact</h3>
             <ul className="space-y-2">
               <li className="flex items-center text-foreground/70">
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           
-          <div className="md:col-span-3">
+          <div className="md:col-span-5">
             <div className="glass dark:glass-dark p-6 rounded-xl">
               <p className="text-sm mb-4 text-foreground/90 italic">
                 "Are you ready to turn simple data into smart strategies that drive results and growth?"
