@@ -10,6 +10,12 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
 const Index = () => {
+  // Set dark mode as the default theme
+  useEffect(() => {
+    document.documentElement.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
+  }, []);
+
   // Smooth scroll implementation for anchor links
   useEffect(() => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

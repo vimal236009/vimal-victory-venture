@@ -94,7 +94,7 @@ const CTA: React.FC = () => {
               )}
               style={{ transitionDelay: "700ms" }}
             >
-              Schedule Your Growth Call
+              BOOK A CALL
               <ArrowRight className="ml-2 h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1" />
             </a>
             

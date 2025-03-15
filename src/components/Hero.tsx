@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
             rel="noopener noreferrer"
             className="group flex items-center bg-highlight hover:bg-highlight/90 text-darkText font-medium py-3 px-6 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
           >
-            Schedule Your Growth Call
+            BOOK A CALL
             <ArrowRight className="ml-2 h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1" />
           </a>
         </div>
