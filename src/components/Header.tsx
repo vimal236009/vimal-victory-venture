@@ -1,6 +1,5 @@
 
 import React, { useEffect, useState } from "react";
-import ThemeToggle from "./ThemeToggle";
 import { cn } from "@/lib/utils";
 
 const Header: React.FC = () => {
@@ -71,15 +70,14 @@ const Header: React.FC = () => {
           ))}
         </nav>
         
-        <div className="flex items-center space-x-4">
-          <ThemeToggle />
+        <div className="flex items-center">
           <a 
             href="https://calendly.com/schedule-growth-call"
             target="_blank"
             rel="noopener noreferrer" 
-            className="hidden md:block bg-highlight hover:bg-highlight/90 text-darkText font-medium py-2 px-4 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105"
+            className="block bg-highlight hover:bg-highlight/90 text-darkText font-medium py-2 px-4 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105"
           >
-            Schedule Call
+            BOOK A CALL
           </a>
         </div>
       </div>

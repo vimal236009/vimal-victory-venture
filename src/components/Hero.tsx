@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
       </div>
       
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="flex flex-col items-center text-center mb-12">
+        <div className="flex flex-col items-center text-center mb-8">
           <div className="mb-2 inline-block">
             <span className="px-3 py-1 rounded-full bg-highlight/10 text-highlight text-xs font-medium animate-fade-in">
               Performance Marketing Specialist
@@ -30,13 +30,26 @@ const Hero: React.FC = () => {
             Marketing Strategies
           </h1>
           
-          <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mb-8 animate-fade-in animate-delay-200">
+          <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mb-6 animate-fade-in animate-delay-200">
             Performance Marketer | Growth Specialist | Automation & Data Insights Expert
           </p>
           
-          <p className="text-base md:text-lg max-w-2xl mb-12 animate-fade-in animate-delay-300">
+          <p className="text-base md:text-lg max-w-2xl mb-8 animate-fade-in animate-delay-300">
             With over 7 years of expertise in digital marketing, I craft data-driven strategies that deliver measurable growth across multiple channels and platforms.
           </p>
+        </div>
+        
+        {/* CTA for Mobile and Desktop - high visibility position */}
+        <div className="flex justify-center mb-10 animate-fade-in animate-delay-400">
+          <a 
+            href="https://calendly.com/schedule-growth-call"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center bg-highlight hover:bg-highlight/90 text-darkText font-medium py-3 px-8 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg text-lg"
+          >
+            BOOK A CALL
+            <ArrowRight className="ml-2 h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1" />
+          </a>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto mb-12">
@@ -62,7 +75,7 @@ const Hero: React.FC = () => {
               className={cn(
                 "glass dark:glass-dark p-6 rounded-2xl text-center transform transition-all duration-500",
                 "hover:translate-y-[-5px] hover:shadow-lg",
-                `animate-fade-in animate-delay-${index + 3}00`
+                `animate-fade-in animate-delay-${index + 5}00`
               )}
             >
               <div className="flex flex-col items-center">
@@ -72,18 +85,6 @@ const Hero: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="flex justify-center animate-fade-in animate-delay-500">
-          <a 
-            href="https://calendly.com/schedule-growth-call"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center bg-highlight hover:bg-highlight/90 text-darkText font-medium py-3 px-6 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
-          >
-            BOOK A CALL
-            <ArrowRight className="ml-2 h-4 w-4 transform transition-transform duration-300 group-hover:translate-x-1" />
-          </a>
         </div>
       </div>
       

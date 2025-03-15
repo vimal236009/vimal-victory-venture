@@ -10,7 +10,7 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
 const Index = () => {
-  // Set dark mode as the default theme
+  // Set dark mode as the default theme and only theme
   useEffect(() => {
     document.documentElement.classList.add('dark');
     localStorage.setItem('theme', 'dark');
@@ -37,19 +37,17 @@ const Index = () => {
   }, []);
 
   return (
-    <ThemeProvider>
-      <div className="min-h-screen">
-        <Header />
-        <main>
-          <Hero />
-          <About />
-          <Services />
-          <Achievements />
-          <CTA />
-        </main>
-        <Footer />
-      </div>
-    </ThemeProvider>
+    <div className="min-h-screen dark">
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Achievements />
+        <CTA />
+      </main>
+      <Footer />
+    </div>
   );
 };
 
